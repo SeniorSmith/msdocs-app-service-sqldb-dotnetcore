@@ -10,7 +10,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
     options.IinstanceName = "samplelarry-cache";
-})
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
